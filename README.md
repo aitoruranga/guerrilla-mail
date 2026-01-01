@@ -45,6 +45,3 @@ This project requires a PHP server to run the proxy script.
 -   **Created by**: [Aitor Uranga](https://uranga.eus)
 -   **Powered by**: [Guerrilla Mail API](https://guerrillamail.com)
 
----
-
-&copy; 2026 Guerrilla Mail Client
