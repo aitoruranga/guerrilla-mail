@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guerrilla Mail - Premium Client</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar / Header Area -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Guerrilla<span class="highlight">Mail</span></h1>
+            </div>
+
+            <div class="email-card">
+                <div class="email-label">Your Disposable Address</div>
+                <div class="email-address-container" id="email-address-container">
+                    <span id="email-address">Loading...</span>
+                    <button id="copy-btn" title="Copy to clipboard" onclick="copyEmail()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 4V16C8 17.1046 8.89543 18 10 18H18C19.1046 18 20 17.1046 20 16V7.24264C20 6.71221 19.7893 6.20357 19.4142 5.82843L16.1716 2.58579C15.7964 2.21071 15.2878 2 14.7574 2H10C8.89543 2 8 2.89543 8 4Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M16 18V20C16 21.1046 15.1046 22 14 22H6C4.89543 22 4 21.1046 4 20V8C4 6.89543 4.89543 6 6 6H8"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="timer-container">
+                    <div class="loader-ring"></div>
+                    <span id="countdown">60:00</span>
+                </div>
+                <button class="action-btn" id="extend-btn">Give me 1 hour more</button>
+                <button class="action-btn secondary" id="forget-btn">Forget Me</button>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="total-emails">0</span>
+                    <span class="stat-label">Messages</span>
+                </div>
+            </div>
+
+            <div class="footer-credits">
+                <p>2026 Guerrilla Mail Client</p>
+                <p>Created by <a href="https://uranga.eus" target="_blank" rel="noopener">Aitor Uranga</a></p>
+                <p>Using <a href="https://guerrillamail.com" target="_blank" rel="noopener">Guerrilla Mail API</a></p>
+                <p>Source code available on <a href="https://github.com/aitoruranga/guerrilla-mail" target="_blank"
+                        rel="noopener">GitHub</a></p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <h2>Inbox</h2>
+                <div class="status-indicator">
+                    <span class="dot"></span> <span id="status-text">Connecting...</span>
+                </div>
+            </header>
+
+            <div class="content-split">
+                <!-- Email List -->
+                <div class="email-list-container">
+                    <ul class="email-list" id="email-list">
+                        <!-- Email items will be injected here -->
+                    </ul>
+                </div>
+
+                <!-- Email Detail -->
+                <div class="email-detail-container" id="email-detail-view">
+                    <div class="empty-state">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <p>Select an email to read</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
