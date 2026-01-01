@@ -2,8 +2,6 @@
 
 A premium, modern web interface for [Guerrilla Mail](https://guerrillamail.com/), allowing you to create disposable email addresses and receive emails instantly.
 
-![Guerrilla Mail Client]
-
 ## Features
 
 -   **Instant Disposable Email**: Generates a temporary email address immediately upon loading.
