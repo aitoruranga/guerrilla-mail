@@ -2,7 +2,7 @@
 
 A premium, modern web interface for [Guerrilla Mail](https://guerrillamail.com/), allowing you to create disposable email addresses and receive emails instantly.
 
-![Guerrilla Mail Client](https://via.placeholder.com/800x400?text=Guerrilla+Mail+Client+Preview)
+![Guerrilla Mail Client]
 
 ## Features
 
